@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #e8e8e8;
+    min-height: 100vh;
+    direction: rtl;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.header-text {
+    flex: 1;
+    text-align: right;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 0;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.login-box h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.login-box p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    text-align: right;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: normal;
+    text-align: right;
+}
+
+input {
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    text-align: right;
+    direction: rtl;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+input::placeholder {
+    color: #999;
+    text-align: right;
+}
+
+.login-button {
+    background: #4CAF50;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    background: #45a049;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Results Page Specific Styles */
+.results-container {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.results-main-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.results-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.results-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.results-header .header-text {
+    flex: 1;
+    text-align: right;
+}
+
+.results-header .logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.results-header h1 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.results-header h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.results-header h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 0;
+    clear: both;
+    text-align: center;
+    font-weight: bold;
+}
+
+.student-info-table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.student-info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 16px;
+}
+
+.student-info-row:last-child {
+    border-bottom: none;
+}
+
+.student-info-label {
+    color: #666;
+    font-weight: normal;
+}
+
+.student-info-value {
+    color: #333;
+    font-weight: bold;
+}
+
+.final-result {
+    background-color: #ffebee;
+    color: #d32f2f;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.info-section h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.warning-box {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.grades-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.grades-list {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+}
+
+.grade-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+.grade-row:last-child {
+    border-bottom: none;
+}
+
+.grade-subject {
+    color: #333;
+    font-weight: normal;
+}
+
+.grade-value {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Special styling for failed subjects */
+.grade-row.failed {
+    background-color: #ffebee;
+}
+
+.grade-row.failed .grade-value {
+    color: #d32f2f;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container, .results-container, .results-card {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .header h1, .results-header h1 {
+        font-size: 20px;
+    }
+    
+    .header h2, .results-header h2 {
+        font-size: 18px;
+    }
+    
+    .login-box h3 {
+        font-size: 24px;
+    }
+    
+    .login-box p {
+        font-size: 14px;
+    }
+    
+    input {
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+    
+    .login-button {
+        padding: 16px;
+        font-size: 16px;
+    }
+    
+    .footer-text {
+        font-size: 12px;
+    }
+    
+    .logo, .results-header .logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .student-info-row {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    
+    .grade-row {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+}
+

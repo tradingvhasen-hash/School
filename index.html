@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - نتائج الامتحانات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-text">
+                <h1>جمهورية العراق</h1>
+                <h2>وزارة التربية</h2>
+            </div>
+            <img src="iraq_logo.png" alt="شعار جمهورية العراق" class="logo">
+        </div>
+        <div class="login-box">
+            <h3>تسجيل الدخول</h3>
+            <p>اللجنة الدائمة للامتحانات العامة لعام 2025/2024 الدور الثاني</p>
+            <p>يرجى إدخال المعلومات بشكل صحيح لتسجيل الدخول إلى المنصة.</p>
+            <form id="loginForm">
+                <label for="examNumber">الرقم الامتحاني</label>
+                <input type="text" id="examNumber" placeholder="ادخل الرقم الامتحاني">
+
+                <label for="password">الرمز السري</label>
+                <input type="password" id="password" placeholder="ادخل الرمز السري">
+
+                <label for="captcha">كم حاصل جمع 16 + 5؟</label>
+                <input type="text" id="captcha" placeholder="اكتب الناتج هنا">
+
+                <button type="submit" class="login-button">تسجيل الدخول</button>
+            </form>
+            <p class="footer-text">جميع الحقوق محفوظة © 2025 وزارة التربية العراقية</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
